@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { SecondComponent } from './second/second.component';
 import { NgIfForComponent } from './ng-if-for/ng-if-for.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     SecondComponent,
-    NgIfForComponent
+    NgIfForComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

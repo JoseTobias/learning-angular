@@ -1,4 +1,5 @@
-<input (input)="num = $event.target.value">
+<p>The text will be displayed if the entry is > 3</p>
+<input type="number" (input)="num = $event.target.value">
 <h1 *ngIf='num > 3'>{{ num }} > 3</h1>
 
 <div *ngFor='let n of numbers'>
