@@ -1,9 +1,9 @@
 <h1>First component</h1>
 
 <p>Name: </p>
-<input type="text" (input)="this.name = $event.target.value"/>
+<input type="text" (change)="getName($event.target.value)"/>
 <h1>{{ name }}</h1>
 
 <p>Age: </p>
-<input type="number" (input)="this.age = $event.target.value"/>
+<input type="number" (input)="getAge($event.target.value)"/>
 <h1>{{ age }}</h1>

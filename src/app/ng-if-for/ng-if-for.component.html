@@ -1,0 +1,6 @@
+<input (input)="num = $event.target.value">
+<h1 *ngIf='num > 3'>{{ num }} > 3</h1>
+
+<div *ngFor='let n of numbers'>
+    <h1 *ngIf='n%2'>{{ n }}</h1>
+</div>

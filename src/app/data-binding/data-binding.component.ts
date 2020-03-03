@@ -14,4 +14,12 @@ export class DataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getName(s: string) {
+    this.name = s
+  }
+
+  getAge(num: number) {
+    this.age = num
+  }
+
 }
