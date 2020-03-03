@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.scss']
 })
 export class DataBindingComponent implements OnInit {
+  name: string;
+  age: number;
 
   constructor() { }
 
