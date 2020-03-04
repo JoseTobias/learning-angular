@@ -21,11 +21,8 @@ export class CrudComponent implements OnInit {
     this.crudService.getPhotos().subscribe(
       (data: Images) => {
         this.images = data;
-        console.log('recebido', data);
-        console.log('preenchido', this.images);
       }, (error: any) => {
         this.error = error;
-        console.error('ERROR: ',error)
       })
   }
 

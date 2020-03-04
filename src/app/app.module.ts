@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
+import { FatherComponent } from './components/father/father.component';
+import { SonComponent } from './components/father/son/son.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
     SecondComponent,
     NgIfForComponent,
     HomeComponent,
-    CrudComponent
+    CrudComponent,
+    FatherComponent,
+    SonComponent
   ],
   imports: [
     BrowserModule,
