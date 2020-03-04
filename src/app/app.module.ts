@@ -9,6 +9,7 @@ import { NgIfForComponent } from './ng-if-for/ng-if-for.component';
 import { HomeComponent } from './home/home.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyloadingModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

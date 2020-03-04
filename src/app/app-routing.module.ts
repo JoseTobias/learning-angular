@@ -8,6 +8,7 @@ import { CrudComponent } from './components/crud/crud.component';
 
 
 const routes: Routes = [
+  { path: 'lazy', loadChildren: () => import('./modules/lazyloading/lazyloading.module').then(m => m.LazyloadingModule)},
   { path: '', component: HomeComponent },
   { path: 'crud', component: CrudComponent },
   { path: 'first-component', component: DataBindingComponent },
